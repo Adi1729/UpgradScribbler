@@ -1,0 +1,27 @@
+.posts {
+    
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-btn-posts {
+
+    background-color: rgb(201, 201, 42);
+   
+    padding: 10px;
+    margin : 8px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 110%;
+ 
+}
+
+#createpostbutton {
+    justify-content: center; 
+}
+
