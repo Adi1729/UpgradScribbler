@@ -3,11 +3,13 @@
     font-size: 30px;
     color: rgb(67, 65, 175);
     font-weight: bold;
+    margin : 1px;
  }
 
 .sub-heading{
   font-family: 'Ubuntu Mono', monospace;
   color: rgb(0, 0, 3);
+  
 
  }
 
@@ -43,5 +45,4 @@
     text-align : center;
     justify-content: space-between;
     margin: 10px;  
-
 }

@@ -1,7 +1,83 @@
-body {
-background-color : #ffeedd;
+body, html {
+    height : 100%;
+  }
+
+
+body{
+
+    width:100%;
+    height: 100%;
+    background-color:#ffeedd;
+
 }
 
-body, html {
-  height : 100%;
+.postslist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 5%;
+  }
+
+.post{
+    display: flex;
+    padding: 2%;
+    border-radius: 5px;
+    margin:10px 0;
+    color: black;
+    width: 45%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px #ccc;
+   
 }
+
+.username{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+ 
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    color: grey;
+    font-weight:initial;
+    
+}
+
+p{
+    width: 90%
+}
+
+
+.comment{
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;    
+    color: black;
+    
+   
+}
+
+.initial-text {
+    line-height: 1.2em;
+    height: 3.6em;
+    overflow: hidden;
+  }
+
+.fa-trash,
+.fa-ellipsis-h {
+  color: #838383;
+  float: right;
+  cursor: pointer;
+}
+
