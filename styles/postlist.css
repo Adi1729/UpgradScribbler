@@ -16,7 +16,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     padding: 20px 5%;
-  }
+   }
 
 .post{
     display: flex;
@@ -25,8 +25,7 @@ body{
     margin:10px 0;
     color: black;
     width: 45%;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 2px #ccc;
+    box-shadow: 20px 20px 50px 10px pink
    
 }
 
@@ -42,42 +41,63 @@ body{
  
 }
 
+.username p{
+    font-weight: bold;
+}
+
 .heading{
     display: flex;
     flex-direction: row;
-    background-color: rgb(209, 209, 209);
-    border-radius: 5px;
+    background-color: #ededed;
     color: grey;
     font-weight:initial;
-    
+    justify-content: space-between;
 }
 
-p{
-    width: 90%
+.heading p{
+    background-color: #ededed;
+    margin: 0 10px 0 0;
 }
-
 
 .comment{
-    display: flex;
-    flex-direction: column;
-
-    background-color: rgb(209, 209, 209);
-    border-radius: 5px;    
-    color: black;
-    
-   
+    background-color: #ededed;
+    padding: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  
 }
 
 .initial-text {
-    line-height: 1.2em;
-    height: 3.6em;
+    line-height: 1.8em;
+    height: 2.4em;
     overflow: hidden;
   }
 
+
+.btn-delete-post{
+    display: flex;
+    justify-content: space-between;
+    margin : 15px;
+    cursor: pointer;
+
+}
+
+
 .fa-trash,
 .fa-ellipsis-h {
-  color: #838383;
-  float: right;
+  color:  grey;
+  float: right ;
   cursor: pointer;
 }
+
+
+#btn-custom-delete{
+    width : 70px;
+}
+
+
+#btn-custom-dont-delete{
+    width : 70px;
+}
+
 

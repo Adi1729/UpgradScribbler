@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montez|Roboto|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>ScriBBler</title>
+
+  <!-- user css files-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/common.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/post.css" />
+
+    <!-- Bootstrap links-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+</head>
+
+<body >
+    <!-- TODO: Include code for header here -->
+
+    <div class = "header">
+        
+          
+        <div class ='title-page'>
+            <p class ="page-title">ScriBBler </p>
+            <p class ="sub-heading">Explore, Imagine, Create</p>
+        </div>
+
+        <button type="button" class="btn-sign-in-up" data-toggle="modal" data-target="#signinModal" id="btn-sign-up">
+            Sign In
+          </button>
+
+
+        <button type="button" class="btn-sign-in-up" data-toggle="modal" data-target="#signupModal" id="btn-sign-up">
+            Sign Up
+          </button>
+
+    
+          <!-- Modal : Sign In -->
+
+          <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Welcome Back</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Username</label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Enter your username" style="background-color :#DCDCDC ;" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Password</label>
+                      <input type="password" class="form-control" id="message-text" placeholder="Enter your password" style="background-color :#DCDCDC ;" required> 
+                    </div>
+
+                    <div class="modal-sign-in-container">
+                      <button type="submit" class="btn btn-success btn-lg btn-block">Sign In </button>
+                  </div>
+                  </form>
+                </div>
+                <div class="modal-footer-in" >Not a member? <a data-toggle="modal" data-target="#signupModal" data-dismiss="modal" href="#signupModal">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- Modal : Sign Up-->
+          <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Name</label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Enter your name" style="background-color :#DCDCDC ;" required="">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Username</label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Enter your username" style="background-color :#DCDCDC ;" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Password</label>
+                      <input type="password" class="form-control" id="message-text" placeholder="Enter your password" style="background-color :#DCDCDC ;" required> 
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="message-text" placeholder="Re-enter your password" style="background-color :#DCDCDC ;" required> 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success btn-lg btn-block">Sign Up </button>  
+                  </div>
+                  </form>
+                </div>
+      
+                
+              </div>
+            </div>
+          </div>
+          
+    </div>
+
+    <section>
+        <div class="post-wrapper">
+          <p class="post-title" id="postTitle">Title of Content</p>
+          <div class="author-edit-wrapper">
+            <span id="author">Author</span>
+            <button class="btn btn-danger saved btn-common" id="editPost">
+              Edit <i class="fa fa-edit"></i>
+            </button>
+          </div>
+          <p class="post-content" id="postContent">
+            This space is for content.
+          </p>
+          <div class="like-wrapper">
+            <button class="btn btn-danger like-button btn-common">
+              <i class="fa fa-thumbs-up"></i>
+              Like
+            </button>
+            <p id="likeText">Be the first one to like this!</p>
+          </div>
+          <div class="comments-wrapper">
+            <textarea
+              name="comments"
+              id="commentBox"
+              placeholder="Leave a comment..."
+            ></textarea>
+            <button class="btn btn-danger comment-button btn-common">
+              Comment
+            </button>
+            <p class="all-comments-text">All Comments</p>
+            <div id="commentsWrapper"></div>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/post.js"></script>
+
+
+</body>
+
+</html>
